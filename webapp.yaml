@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: httpd
+        image: 058264309965.dkr.ecr.us-east-2.amazonaws.com/register:latest
         ports:
         - containerPort: 80
 ---
@@ -29,7 +29,7 @@ spec:
   selector:
     app: webapp
   ports:
-    - name: httpd
+    - name: http
       protocol: TCP
       port: 80
       targetPort: 80
